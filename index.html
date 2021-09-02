@@ -1,197 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
     <head>
+        <title>TS Dental Clinic</title>
         <meta charset="UTF-8">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link href="assets/img/favicon.png" rel="shortcut icon"/>
+        <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
     </head>
     <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Marlon</a>
-                </div>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo3.png" style="max-width: 30px;" alt="" class="nav__icon"/>
+                    TS Dental Clinic
+                </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class='bx bx-home nav__icon'></i>
+                                Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-briefcase-alt-2 nav__icon'></i>
+                                About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class='bx bx-band-aid nav__icon'></i>
+                                Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#galery" class="nav__link">
+                                <i class='bx bx-image-alt nav__icon'></i>
+                                Galeria</a>
+                        </li>
                     </ul>
+                    <div class="nav__dark">
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class='bx bxs-moon change-theme' id="theme-button" ></i>
+                    </div>
+                    <i class='bx bx-x-circle nav__close' id="nav-close"></i>
                 </div>
-
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-grid-alt' ></i>
                 </div>
             </nav>
         </header>
+        <main class="main">
+            <!--Home-->
+            <section class="home" id="home">
+                <img src="assets/img/fondo.png" alt="" class="home__img"/>
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Tu sonrisa, nuestra mayor felicidad.</span>
+                        <h1 class="home__data-title">Tu salud bucal es <br>nuestro <b>compromiso</h1>
+                        <a href="#services" class="button">Explorar</a>
+                    </div>
+                    <div class="home__social">
+                        <a href="" class="home__social-link">
+                            <i class='bx bxl-instagram-alt home__icon' ></i>
+                        </a>
+                        <a href="" class="home__social-link">
+                            <i class='bx bxl-facebook-circle' ></i>
+                        </a>
+                        <a href="" class="home__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+                    </div>
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">6 razones por las que sientes sensibilidad dental.</span>
+                            <a href="#" class="button button--flex button--link home__info-button home__button">
+                                Mas <i class='bx bx-right-arrow-alt' ></i>
+                            </a>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+                            <div class="home__modal">
+                                <div class="home__modal-content">
+                                    <h4 class="home__modal-title">6 razones por las que sientes sensibilidad dental.</h4>
+                                    <i class="bx bx-x-circle home__modal-close"></i>
+                                    <ul class="home__modal-services grid">
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Retracción de las encías</p>
+                                        </li>
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Rechinamiento de los dientes</p>
+                                        </li>
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Enfermedad de las encías</p>
+                                        </li>
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Dientes fracturados</p>
+                                        </li>
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Pasta dental abrasiva</p>
+                                        </li>
+                                        <li class="home__modal-service">
+                                            <i class="bx bx-shocked home__modal-icon"></i>
+                                            <p>Restauración mal adaptada</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                    <a href="#" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <div class="home__img">    
-                    <img src="assets/img/perfil.png" alt="">
+                        </div>
+                        <div class="home__info-overlay">
+                            <img src="assets/img/fondo2.jpeg" alt="" class="home__info-img"/>
+                        </div>
+                    </div>
                 </div>
             </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
+            <!--About-->
+            <section class="about" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Conoce más <br>acerca de nosotros</h2>
+                        <p class="about__description">Te brindamos un servicio integral, atención personalizada y con especial atención al detalle. Nos enfocamos en mantener tu sanidad bucal, contando con un amplio catálogo de servicios, que te ayudaran a mantener una sonrisa saludable y fresca, cumplimos con los estándares de bioseguridad. <b>Reserva tu cita ahora.
+                        </p>
+                        <!--<a href="#" class="button">Reserva tu cita</a>-->
+                    </div>
                     <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about1.jpeg" alt="" class="about__img-one"/>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about2.jpeg" alt="" class="about__img-two"/>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
+                        <div class="about__img-overlay">
+                            <img src="assets/img/about3.jpeg" alt="" class="about__img-three"/>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                    <div class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
+            <!--servicios-->
+            <section class="services section" id="services">
+                <h2 class="section__title about__title">Nuestros servicios</h2>
+                <!--                <p class="about__description">Te brindamos un servicio integral, atención personalizada y con especial atención al detalle. Nos enfocamos en mantener tu sanidad bucal, contando con un amplio catálogo de servicios, que te ayudaran a mantener una sonrisa saludable y fresca, cumplimos con los estándares de bioseguridad. <b>Reserva tu cita ahora.
+                                </p>-->
+                <div class="services__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services1.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Remoción de caries</h2>
+                                <span class="services__description">Causas de las caries dentales:<br>1. Bacterias<br>2. Alimentos o bebidas azucaradas<br>3. Limpieza dental deficiente.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services2.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Brackets estéticos</h2>
+                                <span class="services__description">Dale la perfecta estructura a tu sonrisa con nuestros brackets.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services3.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Carillas inyectadas</h2>
+                                <span class="services__description">Mejora estíticamente tu sonrisa con nuestras carillas inyectadas en tan solo dos citas.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services8.png" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Tratamiento Bruxismo</h2>
+                                <span class="services__description">Bruxismo o mejor conocido como el “rechinamiento de los dientes”. Recordemos que es una acción totalmente involuntaria, pero puede ser mucho más grave en personas ansiosas o que están sometidas a mucho estrés.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services9.png" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Implantes dentales</h2>
+                                <span class="services__description">¿Conoces los beneficios de los implantes dentales?<br>1. Mejora la estética de la sonrisa y contorno facial.<br>2. No afecta a los dientes adyacentes a diferencia de los puentes fijos.<br>3. Previene la pérdida de hueso.<br>4. Solución estable y duradera.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services10.png" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Bichectomia</h2>
+                                <span class="services__description">Consiste en mejorar rasgos faciales, creando una ilusión óptica de una cara más delgada y alargada por medio de una pequeña incisión intraoral.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services5.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Prótesis</h2>
+                                <span class="services__description"><b>Olvidate de los ganchos.</b> Consulta por nuestras modernas prótesis dentales.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services6.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Blanquimiento dental</h2>
+                                <span class="services__description">Presume tu sonrisa luego de una de nuestras limpiezas con ultrasonido.</span>
+                            </div>
+                        </div>
+                        <div class="services__card swiper-slide">
+                            <img src="assets/img/services7.jpeg" alt="" class="services__img"/>
+                            <div class="services__data">
+                                <h2 class="services__title">Extracción de molares</h2>
+                                <span class="services__description">Pregunta por nuestro servicio de extracción de terceras molares.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+            <section class="video section">
+                <h2 class="section__title video__title">Calidad y servicio</h2>
+                <div class="video__container container">
+                    <p class="about__description">Recibirás atención con equipo de avanzada, lo más nuevo en tecnología, contamos con variedad de elementos de acuerdo a tus necesidades y la atención de nuestro personal profesional calificado. Pon tu salud bucal en nuestras manos y disfruta de una sonrisa sana y fresca.
+                    </p>
+                </div>
+                <div class="video__content">
+                    <video id="video-file" style="height: 370px;">
+                        <source src="assets/img/video.mp4" type="video/mp4">
+                    </video>
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class='bx bx-play video__button-icon' id="video-icon" ></i>
+                    </button>
+                </div>
+            </section>
+            <!--Galeria-->
+            <section class="galery" id="galery">
+                <h2 class="section__title galery__title">Galeria</h2>
+                <div class="galery__container container grid swiper">
+                    <div class="swiper-wrapper">
+                        <div class="galery__content grid swiper-slide">                            
+                            <img src="assets/img/exp1.jpeg" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp2.jpeg" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp3.jpeg" alt="" class="galery__img"/>
+                        </div>
+                                                <div class="galery__content grid swiper-slide">
+                                                    <img src="assets/img/exp13.png" alt="" class="galery__img"/>
+                                                </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp12.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp11.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp7.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp8.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp9.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp10.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp4.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp5.png" alt="" class="galery__img"/>
+                        </div>
+                        <div class="galery__content grid swiper-slide">
+                            <img src="assets/img/exp6.png" alt="" class="galery__img"/>
+                        </div>
+                    </div>
+<!--                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>-->
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
                 </div>
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">TS Dental Clinic</h3>
+                        <p class="footer__detail">
+                            Centro Morazán, Torre 2, Nivel C4. Frente al lobby – Recepción torre 2.
+                        </p>
+                        <div class="footer__data">
+                            <h3 class="footer__subtiitle">Team</h3>
+                            <ul>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Dra. Stephanie Kronina Palma</a>
+                                    <div class="footer__container-img">
+                                        <img src="assets/img/prof_np.png" alt="" class="footer__img"/>
+                                    </div>
+                                </li>
+
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Dra. Tiffany Andrea Navas
+                                    </a>
+                                    <div class="footer__container-img">
+                                        <img src="assets/img/prof_tf.png" alt="" class="footer__img"/>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <p>&#169; 2020 copyright all right reserved</p>
         </footer>
-
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+        <!-- Swiper JS -->
+        <script src="assets/js/scrollreveal.min.js" type="text/javascript"></script>
+        <script src="assets/js/swiper-bundle.min.js" type="text/javascript"></script>
+        <script src="assets/js/main.js" type="text/javascript"></script>
     </body>
 </html>
