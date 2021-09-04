@@ -803,7 +803,7 @@ input{
   .home__info {
     bottom: 3rem;
   }
-  .about__container {
+  .about__container{
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
@@ -866,9 +866,7 @@ input{
   .home__info-title {
     font-size: var(--normal-font-size);
   }
-  .home__info-img {
-    width: 240px;
-  }
+  
   .about__img-one {
     width: 230px;
   }

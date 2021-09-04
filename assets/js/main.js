@@ -169,15 +169,26 @@ var swipers = new Swiper(".galery__container", {
     effect: "cards",
     grabCursor: true,
 });
-
-//var swiperrr = new Swiper(".galery__container", {
-//        effect: "flip",
-//        grabCursor: true,
-//        pagination: {
-//          el: ".swiper-pagination",
-//        },
-//        navigation: {
-//          nextEl: ".swiper-button-next",
-//          prevEl: ".swiper-button-prev",
-//        },
-//      });
+    
+//Titulos reveal
+window.sr =ScrollReveal();
+sr.reveal('.home__data,.home__social,.galery__container',{
+   duration:3000,
+   origin:'left',
+   distance:'-100px'
+});
+sr.reveal('.header',{
+   duration:3000,
+   origin:'top',
+   distance:'-100px'
+});
+sr.reveal('.home__info,.services__container',{
+   duration:3000,
+   origin:'right',
+   distance:'-100px'
+});
+sr.reveal('.section__title,.home__container,.home__container,.about__container,.video__content',{
+   duration:3000,
+   origin:'bottom',
+   distance:'-100px'
+});
